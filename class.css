@@ -1,0 +1,655 @@
+.header {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+    border-bottom:  2px solid;
+
+}
+
+.header button {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+
+.header button:hover {
+    text-decoration: none;
+    color: bisque;
+    transition: 00ms;
+}
+
+/* home */
+
+.Home {
+    background-color: bisque;
+    height: 100vh;
+}
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    overflow: visible;
+}
+
+.img {
+    background: url(./im2.jpeg)no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: absolute;
+    background-repeat: no-repeat;
+
+
+}
+.img h3{
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left:46%;
+    top:90%;
+}
+
+.list {
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    border-right: 4px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 180px;
+    font-family: monospace;
+    width: 0;
+
+    animation:
+        typing 4s steps(20, end) forwards,
+        blink 0.75s step-end 5s 5,
+        /* Blink 5 times starting after typing */
+        remove-cursor 0.1s forwards 8s;
+    /* Remove border after blink ends */
+}
+
+/* Typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+        /* Adjust based on your text */
+    }
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Remove the cursor completely */
+@keyframes remove-cursor {
+    to {
+        border-right: none;
+    }
+}
+
+/* About  */
+
+.About {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+
+}
+
+.About.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease;
+}
+
+.About p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+::-webkit-scrollbar{
+   display: none;
+   
+}
+
+
+.About h1 {
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-weight: 100;
+    border-bottom: 2px solid black;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Accommodation */
+
+.Accommodation {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+
+}
+
+.Accommodation.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease;
+}
+
+.Accommodation h1 {
+
+    font-weight: 100;
+    border-bottom: 2px solid black;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.accommodationgrid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.cardo {
+    background: url(./standerd.jpeg) no-repeat center center;
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: background-color 1000ms ease;
+    color: white;
+    /* Optional for better readability */
+}
+
+/* Fix: "background-color" will overlay only if a background-color layer exists */
+.cardo:hover {
+    background-color: rgba(19, 18, 18, 0.719);
+    background-blend-mode: overlay;
+    transition: 1000ms;
+}
+
+.cardo h2 {
+    opacity: 0;
+}
+
+.cardo:hover h2 {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.cardo p {
+    opacity: 0;
+}
+
+.cardo:hover p {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+
+.cardo2 {
+    background: url(./deluxroom.jpeg) no-repeat center center;
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: background-color 1000ms ease;
+    color: white;
+    /* Optional for better readability */
+}
+
+/* Fix: "background-color" will overlay only if a background-color layer exists */
+.cardo2:hover {
+    background-color: rgba(19, 18, 18, 0.719);
+    background-blend-mode: overlay;
+    transition: 1000ms;
+}
+
+.cardo2 h2 {
+    opacity: 0;
+}
+
+.cardo2:hover h2 {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.cardo2 p {
+    opacity: 0;
+}
+
+.cardo2:hover p {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+.cardo3 {
+    background: url(./Bunk\ bed\ idea\ for\ small\ spaces.jpeg) no-repeat center center;
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: background-color 1000ms ease;
+    color: white;
+    /* Optional for better readability */
+}
+
+/* Fix: "background-color" will overlay only if a background-color layer exists */
+.cardo3:hover {
+    background-color: rgba(19, 18, 18, 0.719);
+    background-blend-mode: overlay;
+    transition: 1000ms;
+}
+
+.cardo3 h2 {
+    opacity: 0;
+}
+
+.cardo3:hover h2 {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.cardo3 p {
+    opacity: 0;
+}
+
+.cardo3:hover p {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+/* Gallery */
+
+.Gallery {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+
+}
+
+.Gallery.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease;
+}
+
+
+
+.Gallery h1 {
+
+    font-weight: 100;
+    border-bottom: 2px solid black;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+
+}
+
+.grid img {
+    width: 150px;
+    height: 400px;
+    object-fit: cover;
+    transition: all 1000ms ease;
+}
+
+.grid img:hover {
+    width: 400px;
+    /* This will not animate but can jump to the full width */
+}
+
+.grid .img2 {
+    background: url(./im2.jpeg)no-repeat center center;
+    width: 150px;
+    height: 400px;
+    object-fit: cover;
+    transition: all 1000ms ease;
+    overflow: hidden;
+}
+
+.grid .img2:hover {
+    width: 400px;
+    /* This will not animate but can jump to the full width */
+}
+
+/* video */
+
+.Youtube {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    padding: 70px;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+
+}
+
+.Youtube.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease;
+}
+
+.Youtube h1 {
+
+    font-weight: 100;
+    border-bottom: 2px solid black;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.video-container {
+    position: relative;
+    width: 30%;
+    height: fit-content;
+    margin: 0 auto;
+    padding-top: 230px;
+    /* 16:9 aspect ratio */
+    box-shadow: 5px 5px 0px 0 black;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Contact */
+
+.Contact {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+
+}
+
+.Contact.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease;
+}
+
+.Contact h1 {
+
+    font-weight: 100;
+    border-bottom: 2px solid black;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.Contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+    .header {
+        display: none;
+    }
+
+    .accommodationgrid,
+    .video-grid,
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardo,
+    .cardo2,
+    .cardo3 {
+        background: rgba(19, 18, 18, 0.719);
+        width: 90%;
+        height: auto;
+    }
+
+    .cardo h2 ,
+    .cardo2 h2,
+    .cardo3 h2 {
+        color: white;
+        opacity: 1;
+    }
+    .cardo p ,
+    .cardo2 p,
+    .cardo3 p {
+        color: white;
+        opacity: 1;
+    }
+
+    .img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+    .video-container {
+        width: 90%;
+        padding-top: 56.25%;
+        /* 16:9 ratio for responsive iframe */
+    }
+
+    .list {
+        font-size: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .grid {
+        width: 100%;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+     .grid .img2{
+        width: 100%;
+        height: 400px;
+    }
+    .grid .img2:hover{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/* Phone View (480px and below) */
+@media (max-width: 480px) {
+    .header {
+        display: none;
+    }
+
+    .Home {
+        padding-top: 0px;
+        height: 50vh;
+    }
+
+    .img {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list {
+        font-size: 48px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cardo,
+    .cardo2,
+    .cardo3 {
+        width: 100%;
+        padding: 15px;
+        height: auto;
+    }
+
+    .Accommodation,
+    .Gallery,
+    .Youtube,
+    .Contact,
+    .About {
+        padding: 30px 15px;
+    }
+
+    .video-container {
+        width: 100%;
+        padding-top: 56.25%;
+    }
+
+
+
+
+    
+
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .grid {
+        width: 100%;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+     .grid .img2{
+        width: 100%;
+        height: 400px;
+    }
+    .grid .img2:hover{
+        width: 100%;
+        height: 400px;
+    }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort</title>
+    <link rel="stylesheet" href="class.css">
+    <link rel="stylesheet" type="text/css" href="boot/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="boot/js/bootstrap.js.map">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <button href="#" onclick="scrollToSection('home')">HOME</button>
+        <button href="#" onclick="scrollToSection('about')">ABOUT</button>
+        <button href="#" onclick="scrollToSection('accommodation')">ACCOMMODATION</button>
+        <button href="#" onclick="scrollToSection('gallery')">GALLERY</button>
+        <button href="#" onclick="scrollToSection('video')">VIDEO'S</button>
+        <button href="#" onclick="scrollToSection('contact')">CONTACT</button>
+
+
+    </div>
+    <div class="Home" id="home">
+        <div class="img">
+            <h1 class="list">Resort Black</h1>
+            <h3>mumbai</h3>
+        </div>
+
+
+    </div>
+
+    <div class="About" id="about">
+        <h1>About</h1>
+        <p>
+            <i>
+                I'm a paragraph. Click here to add your own text and edit me.It’s easy. Just click <br>
+                “Edit Text” or double click me to add your own content and make changes to the <br>
+                font.Feel free to drag and drop me anywhere you like on your page.I’m a great <br>
+                place for you to tell a story and let your users know a little more about you.
+            </i>
+        </p>
+
+    </div>
+
+    <div class="Accommodation" id="accommodation">
+        <h1>Accommodation</h1>
+
+
+        <p style="text-align: center;">
+            <i>
+                We offer comfortable and convenient accommodation
+                options to suit a variety of needs and preferences. Whether <br>
+                you're staying for a short visit or a longer stay, our facilities ensure a pleasant and restful
+                experience.
+            </i>
+        </p>
+
+        <div class="accommodationgrid">
+
+            <div class="cardo">
+
+                <h2>01 <br>Standard Rooms</h2>
+                <p>Cozy, affordable rooms with all basic amenities including Wi-Fi, air conditioning, and
+                    a private bathroom.</p>
+            </div>
+            <div class="cardo2">
+                <h2>02 <br>Deluxe Rooms</h2>
+                <p>Spacious and stylish, with enhanced features such as a mini-fridge, flat-screen
+                    TV,and
+                    a scenic view.</p>
+            </div>
+            <div class="cardo3">
+                <h2>03 <br>Shared Dormitories</h2>
+                <p>Perfect for groups or budget-conscious guests, with access to common areas and
+                    secure
+                    lockers.</p>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="Gallery" id="gallery">
+        <h1>Gallery</h1>
+        <div class="grid">
+
+
+            <div class="img2">
+                <h2>01</h2>
+            </div>
+            <div class="img2">
+                <h2>01</h2>
+            </div>
+            <div class="img2">
+                <h2>01</h2>
+            </div>
+            <div class="img2">
+                <h2>01</h2>
+            </div>
+            <div class="img2">
+                <h2>01</h2>
+            </div>
+            <div class="img2">
+                <h2>01</h2>
+            </div>
+            <div class="img2">
+                <h2>01</h2>
+            </div>
+            <div class="img2">
+                <h2>01</h2>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="Youtube" id="video">
+        <h1>Video's</h1>
+        <div class="video-grid">
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/v5GXVulxAQo?si=9eUowkOURXXu--T9" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/v5GXVulxAQo?si=9eUowkOURXXu--T9" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/v5GXVulxAQo?si=9eUowkOURXXu--T9" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="Contact" id="contact">
+
+        <h1>Contact</h1>
+        <span class="contact-info">
+
+            <span> <i><a data-auto-recognition="true" href="mailto:info@mysite.com">info@mysite.com</a></i></span>/
+            <span> <i>500 Terry Francine Street, San Francisco, CA 94158 </i></span>/
+            <span><i>Tel: 123-456-7890 </i></span>
+
+        </span>
+
+    </div>
+
+    <div class="Footer">
+
+    </div>
+
+</body>
+
+<script>
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+
+    window.addEventListener('scroll', function () {
+        const section = document.getElementById('about');
+        const rect = section.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight - 100) {
+            section.classList.add('show');
+        }
+    });
+
+    window.addEventListener('scroll', function () {
+        const section = document.getElementById('accommodation');
+        const rect = section.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight - 100) {
+            section.classList.add('show');
+        }
+    });
+
+    window.addEventListener('scroll', function () {
+        const section = document.getElementById('gallery');
+        const rect = section.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight - 100) {
+            section.classList.add('show');
+        }
+    });
+
+    window.addEventListener('scroll', function () {
+        const section = document.getElementById('video');
+        const rect = section.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight - 100) {
+            section.classList.add('show');
+        }
+    });
+
+    window.addEventListener('scroll', function () {
+        const section = document.getElementById('contact');
+        const rect = section.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight - 100) {
+            section.classList.add('show');
+        }
+    });
+</script>
+
+</html>
