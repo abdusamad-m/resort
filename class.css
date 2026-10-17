@@ -71,8 +71,8 @@
   .figs small{color:var(--muted);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
   .collage{position:relative;height:520px}
   .collage div{position:absolute;border-radius:var(--radius);border:1px solid var(--line);overflow:hidden}
-  .c1{inset:0 22% 18% 0;background:url("./im2.jpeg") center/cover no-repeat}
-  .c2{inset:34% 0 0 38%;background:url("./deluxroom.jpeg") center/cover no-repeat;box-shadow:0 30px 60px rgba(18,48,58,.25)}
+  .c1{inset:0 22% 18% 0;background:url("./img1.jpeg") center/cover no-repeat}
+  .c2{inset:34% 0 0 38%;background:url("./standerdroom.jpeg") center 60%/cover no-repeat;box-shadow:0 30px 60px rgba(18,48,58,.25)}
   .c1::after{content:"Sea-facing villas";position:absolute;left:22px;bottom:20px;font-family:"Cormorant Garamond",serif;font-size:1.5rem;color:#fff}
   .c2::after{content:"Sunset deck";position:absolute;left:22px;bottom:20px;font-family:"Cormorant Garamond",serif;font-size:1.5rem;color:#fff}
 
@@ -83,8 +83,8 @@
   .room{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.4s;display:flex;flex-direction:column}
   .room:hover{transform:translateY(-8px);border-color:rgba(15,118,110,.45);box-shadow:0 30px 60px rgba(18,48,58,.15)}
   .thumb{height:230px;position:relative;display:flex;align-items:flex-start;justify-content:space-between;padding:18px}
-  .t1{background:url("./standerd.jpeg") center/cover no-repeat}
-  .t2{background:url("./deluxroom.jpeg") center/cover no-repeat}
+  .t1{background:url("./standerd.jpeg") center 72%/cover no-repeat}
+  .t2{background:url("./deluxroom.jpeg") center 60%/cover no-repeat}
   .t3{background:url("./Bunk%20bed%20idea%20for%20small%20spaces.jpeg") center/cover no-repeat}
   .num{font-family:"Cormorant Garamond",serif;font-size:3.4rem;line-height:1;color:rgba(255,255,255,.85)}
   .tag{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;background:rgba(255,255,255,.9);color:var(--ink);border:1px solid var(--line);padding:6px 12px;border-radius:999px;font-weight:600}
@@ -104,14 +104,14 @@
   .g::after{content:attr(data-t);position:absolute;inset:auto 0 0 0;padding:44px 18px 16px;background:linear-gradient(transparent,rgba(10,40,48,.75));color:#fff;font-family:"Cormorant Garamond",serif;font-size:1.3rem;opacity:0;transform:translateY(10px);transition:.4s}
   .g:hover{transform:scale(1.02);z-index:2}
   .g:hover::after{opacity:1;transform:none}
-  .g:nth-child(1){grid-column:span 2;grid-row:span 2;background:url("./im2.jpeg") center/cover no-repeat}
-  .g:nth-child(2){background:url("./standerd.jpeg") center/cover no-repeat}
-  .g:nth-child(3){background:url("./deluxroom.jpeg") center/cover no-repeat}
-  .g:nth-child(4){grid-row:span 2;background:url("./Bunk%20bed%20idea%20for%20small%20spaces.jpeg") center/cover no-repeat}
-  .g:nth-child(5){background:url("./im2.jpeg") center/cover no-repeat}
-  .g:nth-child(6){grid-column:span 2;background:url("./deluxroom.jpeg") center/cover no-repeat}
-  .g:nth-child(7){background:url("./Bunk%20bed%20idea%20for%20small%20spaces.jpeg") center/cover no-repeat}
-  .g:nth-child(8){background:url("./standerd.jpeg") center/cover no-repeat}
+  .g:nth-child(1){grid-column:span 2;grid-row:span 2;background:url("./img1.jpeg") center/cover no-repeat}
+  .g:nth-child(2){background:url("./standerd.jpeg") center 70%/cover no-repeat}
+  .g:nth-child(3){background:url("./deluxroom.jpeg") center 60%/cover no-repeat}
+  .g:nth-child(4){grid-row:span 2;background:url("./standerdroom.jpeg") center/cover no-repeat}
+  .g:nth-child(5){background:url("./Bunk%20bed%20idea%20for%20small%20spaces.jpeg") center/cover no-repeat}
+  .g:nth-child(6){grid-column:span 2;background:url("./deluxroom.jpeg") center 55%/cover no-repeat}
+  .g:nth-child(7){background:url("./standerdroom.jpeg") center 65%/cover no-repeat}
+  .g:nth-child(8){background:url("./im2.jpeg") center 55%/cover no-repeat}
   .hint{margin-top:18px;color:var(--muted);font-size:.82rem}
 
   /* VIDEO */
